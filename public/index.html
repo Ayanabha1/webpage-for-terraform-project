@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-  <meta charset=UTF-8>
-  <meta name=viewport content=width=device-width, initial-scale=1.0>
-  <title>Public IP Address</title>
-  <script src=script.js></script>
-</head>
-<body>
-        <h1>Instance public ip: <span id=public-ip>Loading...</span> </h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width"
+      ="device-width,"
+      initial-scale="1.0"
+    />
+    <title>Instance IP Address</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      #public-ip {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>
+      This page is returned by aws ec2 which is part of a private subnet setup
+      using terraform
+    </h1>
+
+    <h1>Instance ip: <span id="public-ip">Loading...</span></h1>
+  </body>
 </html>
