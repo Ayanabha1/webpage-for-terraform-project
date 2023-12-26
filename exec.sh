@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Install nodejs and npm
-apt update -y
-apt install -y nodejs npm
+# Install dependencies
+npm i
 
 # Run the node app
 node index
