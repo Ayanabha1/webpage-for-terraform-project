@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install dependencies
-npm i
+sudo npm i
 
 # Run the node app
 node index
